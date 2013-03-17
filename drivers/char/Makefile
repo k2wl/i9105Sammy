@@ -65,6 +65,7 @@ obj-$(CONFIG_RAMOOPS)		+= ramoops.o
 obj-$(CONFIG_JS_RTC)		+= js-rtc.o
 js-rtc-y = rtc.o
 
+<<<<<<< HEAD
 obj-$(CONFIG_BRCM_CHAR_DRIVERS) += broadcom/
 obj-$(CONFIG_BCM_GPS)		+= bcm_gps.o
 
@@ -92,3 +93,9 @@ $(obj)/defkeymap.c: $(obj)/%.c: $(src)/%.map
 	rm $@.tmp
 
 endif
+=======
+obj-$(CONFIG_MSM_ROTATOR)	+= msm_rotator.o
+obj-$(CONFIG_MMC_GENERIC_CSDIO)	+= csdio.o
+
+obj-$(CONFIG_FRANDOM) += frandom.o
+>>>>>>> 7d4e5e9... Added Fast Random generator support (frandom)

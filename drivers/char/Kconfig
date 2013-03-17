@@ -642,5 +642,26 @@ config BCM_GPS
 	  Select this to include GPS support for BCMHANA
 	  If unsure, say N.
 
+<<<<<<< HEAD
 endmenu
+=======
+config CSDIO_DEVICE_ID
+	hex "CardDeviceId"
+	depends on MMC_GENERIC_CSDIO
+	default "0"
+	help
+	  Enter device id for targeted sdio device, this may be overwritten by
+	  module parameters.
+>>>>>>> 7d4e5e9... Added Fast Random generator support (frandom)
 
+config FRANDOM
+	tristate "Frandom: Fast random number generator support"
+	default y
+	help
+	  Frandom is a Linux kernel random number generator, which is 10-50
+	  times faster than what you get from Linux' built-in /dev/urandom.
+	  And it uses very little (/dev/frandom) or none (/dev/erandom) of
+	  the kernel's entropy pool, so it is very useful for applications
+	  that require a handy source for lots of random data.
+
+endmenu
