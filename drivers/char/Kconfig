@@ -642,8 +642,7 @@ config BCM_GPS
 	  Select this to include GPS support for BCMHANA
 	  If unsure, say N.
 
-endmenu
-=======
+
 config CSDIO_DEVICE_ID
 	hex "CardDeviceId"
 	depends on MMC_GENERIC_CSDIO
