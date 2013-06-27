@@ -642,7 +642,6 @@ config BCM_GPS
 	  Select this to include GPS support for BCMHANA
 	  If unsure, say N.
 
-<<<<<<< HEAD
 endmenu
 =======
 config CSDIO_DEVICE_ID
@@ -652,7 +651,6 @@ config CSDIO_DEVICE_ID
 	help
 	  Enter device id for targeted sdio device, this may be overwritten by
 	  module parameters.
->>>>>>> 7d4e5e9... Added Fast Random generator support (frandom)
 
 config FRANDOM
 	tristate "Frandom: Fast random number generator support"
